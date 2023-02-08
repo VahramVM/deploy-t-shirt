@@ -5027,12 +5027,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(CategoriesService, [{
         key: "Themes",
         value: function Themes(a) {
-          return this.http.get('http://localhost:5000/api/category?name=' + a).pipe();
+          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category?name=' + a).pipe();
         }
       }, {
         key: "fetch",
         value: function fetch() {
-          return this.http.get('http://localhost:5000/api/category').pipe();
+          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category').pipe();
         }
       }, {
         key: "create",
