@@ -4113,7 +4113,7 @@ class AuthServices {
         return this.http.get('api/category').pipe();
     }
     register(user) {
-        return this.http.post('http://localhost:5000/api/auth/register', user);
+        return this.http.post('https://deploy-t-shirt-production.up.railway.app/api/auth/register', user);
     }
     login(user) {
         return this.http.post('https://deploy-t-shirt-production.up.railway.app/auth/login', user).
