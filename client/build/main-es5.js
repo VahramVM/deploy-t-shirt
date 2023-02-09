@@ -5027,12 +5027,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(CategoriesService, [{
         key: "Themes",
         value: function Themes(a) {
-          return this.http.get('http://localhost:5000/api/category?name=' + a).pipe();
+          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category?name=' + a).pipe();
         }
       }, {
         key: "fetch",
         value: function fetch() {
-          return this.http.get('http://localhost:5000/api/category').pipe();
+          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category').pipe();
         }
       }, {
         key: "create",
@@ -5441,7 +5441,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(FontService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('http://localhost:5000/api/font').pipe();
+          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/font').pipe();
         }
       }]);
 
@@ -5676,7 +5676,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProdutsColorService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('http://localhost:5000/api/productcolor').pipe();
+          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/productcolor').pipe();
         }
       }]);
 
@@ -10536,7 +10536,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var environment = {
       production: false,
-      backend_url: 'http://localhost:5000'
+      backend_url: 'https://deploy-t-shirt-production.up.railway.app'
     };
     /*
      * For easier debugging in development mode, you can import the following file
