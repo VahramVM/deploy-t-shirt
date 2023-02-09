@@ -5027,12 +5027,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(CategoriesService, [{
         key: "Themes",
         value: function Themes(a) {
-          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category?name=' + a).pipe();
+          return this.http.get('http://localhost:5000/api/category?name=' + a).pipe();
         }
       }, {
         key: "fetch",
         value: function fetch() {
-          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category').pipe();
+          return this.http.get('http://localhost:5000/api/category').pipe();
         }
       }, {
         key: "create",
@@ -5772,14 +5772,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "register",
         value: function register(user) {
-          return this.http.post('https://deploy-t-shirt-production.up.railway.app/register', user);
+          return this.http.post('http://localhost:5000/api/auth/register', user);
         }
       }, {
         key: "login",
         value: function login(user) {
           var _this16 = this;
 
-          return this.http.post('https://deploy-t-shirt-production.up.railway.app/register', user).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(function (_ref) {
+          return this.http.post('http://localhost:5000/api/auth/login', user).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(function (_ref) {
             var token = _ref.token;
             localStorage.setItem('auth-token', token);
 

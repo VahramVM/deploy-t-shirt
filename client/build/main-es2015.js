@@ -4113,10 +4113,10 @@ class AuthServices {
         return this.http.get('api/category').pipe();
     }
     register(user) {
-        return this.http.post('https://deploy-t-shirt-production.up.railway.app/register', user);
+        return this.http.post('http://localhost:5000/api/auth/register', user);
     }
     login(user) {
-        return this.http.post('https://deploy-t-shirt-production.up.railway.app/register', user).
+        return this.http.post('http://localhost:5000/api/auth/login', user).
             pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(({ token }) => {
             localStorage.setItem('auth-token', token);
             this.setToken(token);
