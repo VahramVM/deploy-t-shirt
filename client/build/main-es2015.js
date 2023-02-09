@@ -4030,7 +4030,7 @@ class ProdutsService {
         // )   
     }
     fetch() {
-        return this.http.get('http://localhost:5000/api/product').pipe();
+        return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/product').pipe();
     }
 }
 ProdutsService.ɵfac = function ProdutsService_Factory(t) { return new (t || ProdutsService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };

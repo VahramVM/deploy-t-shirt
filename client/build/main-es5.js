@@ -5600,7 +5600,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProdutsService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('http://localhost:5000/api/product').pipe();
+          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/product').pipe();
         }
       }]);
 
