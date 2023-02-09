@@ -7507,7 +7507,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             var image = {
               image: this.canvas.reqImage,
               image1: this.canvas.reqImage1
-            }; // this.httpService.sendEmail("http://localhost:5000/sendmail", image)
+            }; 
+            // this.httpService.sendEmail("http://localhost:5000/sendmail", image)
             // data => {
             //   let res: any = data;
             //   console.log('all is ok');

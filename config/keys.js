@@ -1,5 +1,5 @@
 module.exports = {
-    mongoURI: "mongodb+srv://Vahram1:120485@cluster0-p3qfx.mongodb.net/T_short?retryWrites=true&w=majority",
+    mongoURI: "mongodb+srv://Vahram1:120485@cluster0-p3qfx.mongodb.net/T_short?retryWrites=true&w=majorityyy",
     jwt: 'dev-jwt'
 }
 
