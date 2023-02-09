@@ -3658,7 +3658,7 @@ class CategoriesService {
         this.http = http;
     }
     Themes(a) {
-        return this.http.get('https://deploy-t-shirt-production.up.railway.app/category?name=' + a).pipe();
+        return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category?name=' + a).pipe();
     }
     fetch() {
         return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category').pipe();
