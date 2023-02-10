@@ -3658,10 +3658,10 @@ class CategoriesService {
         this.http = http;
     }
     Themes(a) {
-        return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category?name=' + a).pipe();
+        return this.http.get('http://localhost:5000/api/category?name=' + a).pipe();
     }
     fetch() {
-        return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category').pipe();
+        return this.http.get('http://localhost:5000/api/category').pipe();
     }
     create(name, image) {
         const fd = new FormData();
@@ -3946,7 +3946,7 @@ class FontService {
         this.http = http;
     }
     fetch() {
-        return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/font').pipe();
+        return this.http.get('http://localhost:5000/api/font').pipe();
     }
 }
 FontService.ɵfac = function FontService_Factory(t) { return new (t || FontService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
@@ -4030,7 +4030,7 @@ class ProdutsService {
         // )   
     }
     fetch() {
-        return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/product').pipe();
+        return this.http.get('http://localhost:5000/api/product').pipe();
     }
 }
 ProdutsService.ɵfac = function ProdutsService_Factory(t) { return new (t || ProdutsService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
@@ -4065,7 +4065,7 @@ class ProdutsColorService {
         this.http = http;
     }
     fetch() {
-        return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/productcolor').pipe();
+        return this.http.get('http://localhost:5000/api/productcolor').pipe();
     }
 }
 ProdutsColorService.ɵfac = function ProdutsColorService_Factory(t) { return new (t || ProdutsColorService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
@@ -4113,10 +4113,10 @@ class AuthServices {
         return this.http.get('api/category').pipe();
     }
     register(user) {
-        return this.http.post('https://deploy-t-shirt-production.up.railway.app/api/auth/register', user);
+        return this.http.post('http://localhost:5000/api/auth/register', user);
     }
     login(user) {
-        return this.http.post('https://deploy-t-shirt-production.up.railway.app/auth/login', user).
+        return this.http.post('http://localhost:5000/api/auth/login', user).
             pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(({ token }) => {
             localStorage.setItem('auth-token', token);
             this.setToken(token);
@@ -6495,7 +6495,7 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    backend_url: 'https://deploy-t-shirt-production.up.railway.app'
+    backend_url: 'http://localhost:5000'
 };
 /*
  * For easier debugging in development mode, you can import the following file

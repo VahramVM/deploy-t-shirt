@@ -5027,12 +5027,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(CategoriesService, [{
         key: "Themes",
         value: function Themes(a) {
-          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category?name=' + a).pipe();
+          return this.http.get('http://localhost:5000/api/category?name=' + a).pipe();
         }
       }, {
         key: "fetch",
         value: function fetch() {
-          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/category').pipe();
+          return this.http.get('http://localhost:5000/api/category').pipe();
         }
       }, {
         key: "create",
@@ -5441,7 +5441,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(FontService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/font').pipe();
+          return this.http.get('http://localhost:5000/api/font').pipe();
         }
       }]);
 
@@ -5600,7 +5600,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProdutsService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/product').pipe();
+          return this.http.get('http://localhost:5000/api/product').pipe();
         }
       }]);
 
@@ -5676,7 +5676,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProdutsColorService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('https://deploy-t-shirt-production.up.railway.app/api/productcolor').pipe();
+          return this.http.get('http://localhost:5000/api/productcolor').pipe();
         }
       }]);
 
@@ -5772,14 +5772,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "register",
         value: function register(user) {
-          return this.http.post('https://deploy-t-shirt-production.up.railway.app/api/auth/register', user);
+          return this.http.post('http://localhost:5000/api/auth/register', user);
         }
       }, {
         key: "login",
         value: function login(user) {
           var _this16 = this;
 
-          return this.http.post('https://deploy-t-shirt-production.up.railway.app/api/auth/login', user).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(function (_ref) {
+          return this.http.post('http://localhost:5000/api/auth/login', user).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(function (_ref) {
             var token = _ref.token;
             localStorage.setItem('auth-token', token);
 
@@ -7150,7 +7150,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _c13 = function _c13() {
       return {
         "margin-top": "20px"
-      };
+      }
     };
 
     var _c14 = function _c14(a0) {
@@ -7507,8 +7507,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             var image = {
               image: this.canvas.reqImage,
               image1: this.canvas.reqImage1
-            }; 
-            // this.httpService.sendEmail("http://localhost:5000/sendmail", image)
+            }; // this.httpService.sendEmail("http://localhost:5000/sendmail", image)
             // data => {
             //   let res: any = data;
             //   console.log('all is ok');
@@ -10537,7 +10536,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var environment = {
       production: false,
-      backend_url: 'https://deploy-t-shirt-production.up.railway.app'
+      backend_url: 'http://localhost:5000'
     };
     /*
      * For easier debugging in development mode, you can import the following file
