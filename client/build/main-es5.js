@@ -5027,7 +5027,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(CategoriesService, [{
         key: "Themes",
         value: function Themes(a) {
-          return this.http.get('http://localhost:5000/api/category?name=' + a).pipe();
+          return this.http.get('https://t-shop.cyclic.app/api/category?name=' + a).pipe();
         }
       }, {
         key: "fetch",
@@ -5600,7 +5600,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProdutsService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('http://localhost:5000/api/product').pipe();
+          return this.http.get('https://t-shop.cyclic.app/api/product').pipe();
         }
       }]);
 
@@ -5676,7 +5676,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProdutsColorService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('http://localhost:5000/api/productcolor').pipe();
+          return this.http.get('https://t-shop.cyclic.app/productcolor').pipe();
         }
       }]);
 
