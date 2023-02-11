@@ -3946,7 +3946,7 @@ class FontService {
         this.http = http;
     }
     fetch() {
-        return this.http.get('http://localhost:5000/api/font').pipe();
+        return this.http.get('https://t-shop.cyclic.app/api/font').pipe();
     }
 }
 FontService.ɵfac = function FontService_Factory(t) { return new (t || FontService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };

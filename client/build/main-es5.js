@@ -5441,7 +5441,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(FontService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('http://localhost:5000/api/font').pipe();
+          return this.http.get('https://t-shop.cyclic.app/api/font').pipe();
         }
       }]);
 
