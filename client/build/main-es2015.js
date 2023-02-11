@@ -3661,7 +3661,9 @@ class CategoriesService {
         return this.http.get('https://t-shop.cyclic.app/api/category?name=' + a).pipe();
     }
     fetch() {
-        return this.http.get('http://localhost:5000/api/category').pipe();
+        setTimeout(() => {
+            return this.http.get('http://localhost:5000/api/category').pipe();
+          }, 20000);
     }
     create(name, image) {
         const fd = new FormData();
