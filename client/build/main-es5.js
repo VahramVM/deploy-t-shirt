@@ -5772,7 +5772,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "register",
         value: function register(user) {
-          return this.http.post('http://localhost:5000/api/auth/register', user);
+          return this.http.post('https://t-shop.cyclic.app/api/auth/register', user);
         }
       }, {
         key: "login",
