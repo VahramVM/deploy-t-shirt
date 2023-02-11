@@ -7,7 +7,7 @@
         "changeOrigin": true
     },
 
-    "/api/auth/*": {
+    "*/api/auth/": {
         "target": "https://t-shop.cyclic.app",
         "secure": false,
         "logLevel": "debug",
