@@ -1,7 +1,7 @@
 {
 
     "/uploads/*": {
-        "target": "https://deploy-t-shirt-production.up.railway.app",
+        "target": "https://t-shop.cyclic.app",
         "secure": false,
         "logLevel": "debug",
         "changeOrigin": true
