@@ -29,7 +29,9 @@
     "nodemailer": "^6.4.11",
     "nodemailer-plugin-inline-base64": "^2.1.1",
     "passport": "^0.4.1",
-    "passport-jwt": "^4.0.0"
+    "passport-jwt": "^4.0.0",
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
