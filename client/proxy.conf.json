@@ -5,6 +5,14 @@
         "secure": false,
         "logLevel": "debug",
         "changeOrigin": true
+    },
+
+    "/api/auth/*": {
+        "target": "https://t-shop.cyclic.app",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
     }
+
 }
 
