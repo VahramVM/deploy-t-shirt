@@ -4032,7 +4032,7 @@ class ProdutsService {
         // )   
     }
     fetch() {
-        return this.http.get('https://t-shop.cyclic.app/api/product').pipe();
+        return this.http.get('https://t-shop.adaptable.app/api/product').pipe();
     }
 }
 ProdutsService.ɵfac = function ProdutsService_Factory(t) { return new (t || ProdutsService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
