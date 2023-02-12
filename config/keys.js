@@ -1,10 +1,11 @@
 module.exports = {
     mongoURI: "mongodb+srv://Vahram1:120485@cluster0-p3qfx.mongodb.net/T_short?retryWrites=true&w=majority",
-    jwt: 'dev-jwt'
+    jwt: 'dev-jwt',
+    port: 5000
 }
 
 
-
+// mongo "mongodb://mongo:b3c6N5fW8foTDhxfcOCS@containers-us-west-99.railway.app:6749"
 // mongoURI: "mongodb+srv://Vahram1:120485@cluster0-p3qfx.mongodb.net/T_short?retryWrites=true&w=majority",
 
 //mongodb://localhost:27017/myapp
