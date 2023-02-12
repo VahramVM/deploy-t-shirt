@@ -3661,9 +3661,7 @@ class CategoriesService {
         return this.http.get('https://t-shop.adaptable.app/api/category?name=' + a).pipe();
     }
     fetch() {
-        setTimeout(() => {
             return this.http.get('https://t-shop.adaptable.app/api/category').pipe();
-          }, 20000);
     }
     create(name, image) {
         const fd = new FormData();
