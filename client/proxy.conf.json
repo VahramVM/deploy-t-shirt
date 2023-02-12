@@ -1,14 +1,14 @@
 {
 
     "/uploads/*": {
-        "target": "https://t-shop.cyclic.app",
+        "target": "https://t-shop.adaptable.app",
         "secure": false,
         "logLevel": "debug",
         "changeOrigin": true
     },
 
     "/api/auth/*": {
-        "target": "https://t-shop.cyclic.app",
+        "target": "https://t-shop.adaptable.app",
         "secure": false,
         "logLevel": "debug",
         "changeOrigin": true

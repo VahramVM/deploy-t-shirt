@@ -5033,7 +5033,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "fetch",
         value: function fetch() {
           setTimeout(() => {
-            return this.http.get('http://localhost:5000/api/category').pipe();
+            return this.http.get('https://t-shop.adaptable.app/api/category').pipe();
           }, 20000);
           
         }
