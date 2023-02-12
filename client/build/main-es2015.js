@@ -3948,7 +3948,7 @@ class FontService {
         this.http = http;
     }
     fetch() {
-        return this.http.get('https://t-shop.cyclic.app/api/font').pipe();
+        return this.http.get('https://t-shop.adaptable.app/api/font').pipe();
     }
 }
 FontService.ɵfac = function FontService_Factory(t) { return new (t || FontService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
@@ -4067,7 +4067,7 @@ class ProdutsColorService {
         this.http = http;
     }
     fetch() {
-        return this.http.get('https://t-shop.cyclic.app/api/productcolor').pipe();
+        return this.http.get('https://t-shop.adaptable.app/api/productcolor').pipe();
     }
 }
 ProdutsColorService.ɵfac = function ProdutsColorService_Factory(t) { return new (t || ProdutsColorService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
@@ -4115,10 +4115,10 @@ class AuthServices {
         return this.http.get('api/category').pipe();
     }
     register(user) {
-        return this.http.post('https://t-shop.cyclic.app/api/auth/register', user);
+        return this.http.post('https://t-shop.adaptable.app/api/auth/register', user);
     }
     login(user) {
-        return this.http.post('https://t-shop.cyclic.app/api/auth/login', user).
+        return this.http.post('https://t-shop.adaptable.app/api/auth/login', user).
             pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(({ token }) => {
             localStorage.setItem('auth-token', token);
             this.setToken(token);
