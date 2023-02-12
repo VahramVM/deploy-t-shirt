@@ -3658,7 +3658,7 @@ class CategoriesService {
         this.http = http;
     }
     Themes(a) {
-        return this.http.get('https://t-shop.cyclic.app/api/category?name=' + a).pipe();
+        return this.http.get('https://t-shop.adaptable.app/api/category?name=' + a).pipe();
     }
     fetch() {
         setTimeout(() => {

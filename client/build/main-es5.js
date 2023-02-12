@@ -5027,7 +5027,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(CategoriesService, [{
         key: "Themes",
         value: function Themes(a) {
-          return this.http.get('https://t-shop.cyclic.app/api/category?name=' + a).pipe();
+          return this.http.get('https://t-shop.adaptable.app/api/category?name=' + a).pipe();
         }
       }, {
         key: "fetch",
