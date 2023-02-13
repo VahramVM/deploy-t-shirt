@@ -3353,7 +3353,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.canvas.renderAll();
           var lastColor = this.props.canvasFill; // this.saveCanvasToJSON();
 
-          this.canvas.backgroundImage = null; // this.canvas.backgroundColor = null;
+          this.canvas.backgroundImage = null; 
+          this.canvas.backgroundColor = null;
 
           this.canvas.renderAll();
           this.canvas.backgroundImage = null; // this.canvas.remove(...this.canvas.getObjects())

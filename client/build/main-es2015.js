@@ -2760,7 +2760,7 @@ class EditorPicComponent {
         const lastColor = this.props.canvasFill;
         // this.saveCanvasToJSON();
         this.canvas.backgroundImage = null;
-        // this.canvas.backgroundColor = null;
+        this.canvas.backgroundColor = null;
         this.canvas.renderAll();
         this.canvas.backgroundImage = null;
         // this.canvas.remove(...this.canvas.getObjects())
