@@ -4955,11 +4955,11 @@ let SiteLayoutComponent = class SiteLayoutComponent {
                 image: this.canvas.reqImage,
                 image1: this.canvas.reqImage1
             };
-            // this.httpService.sendEmail("http://localhost:5000/sendmail", image)
-            // data => {
-            //   let res: any = data;
-            //   console.log('all is ok');
-            // }
+            this.httpService.sendEmail("http://localhost:5000/sendmail", image)
+            data => {
+              let res = data;
+              console.log('all is ok');
+            }
         }
         else {
             return;
