@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
 
 const fileFilter = (req, file, cb) => {
 
-    if (true) {
+    if (file.mimetype === 'image/png' || file.mimetype === 'image/png', file.mimetype === 'image/svg') {
         cb(null, true)
     } else {
         cb(null, false)
