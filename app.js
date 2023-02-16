@@ -50,7 +50,6 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // app.use('/api/mail', analyticsRotes)
-
 // const express = require("express");
 // const cors = require("cors");
 // const bodyParser = require("body-parser");
@@ -59,7 +58,7 @@ const inlineBase64 = require('nodemailer-plugin-inline-base64');
 
 // const app = express();
 
-//configure the Express middleware to accept CORS requests and parse request body into JSON
+//configure the Express middleware to accept CORS requests and parse request body into JSON 11
 
 app.use(cors({ origin: "*" }));
 // app.use(cors({
