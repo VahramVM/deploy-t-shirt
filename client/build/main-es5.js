@@ -7512,7 +7512,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             this.httpService.sendEmail("https://quickpic.adaptable.app/sendmail", image)
             data => {
               let res = data;
-              console.log('all is ok');
+              console.log('all is okk');
             }
           } else {
             return;
