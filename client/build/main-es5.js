@@ -5028,12 +5028,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(CategoriesService, [{
         key: "Themes",
         value: function Themes(a) {
-          return this.http.get('https://t-shop.adaptable.app/api/category?name=' + a).pipe();
+          return this.http.get('https://quickpic.adaptable.app/api/category?name=' + a).pipe();
         }
       }, {
         key: "fetch",
         value: function fetch() {
-            return this.http.get('https://t-shop.adaptable.app/api/category').pipe();      
+            return this.http.get('https://quickpic.adaptable.app/api/category').pipe();      
         }
       }, {
         key: "create",
@@ -5442,7 +5442,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(FontService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('https://t-shop.adaptable.app/api/font').pipe();
+          return this.http.get('https://quickpic.adaptable.app/api/font').pipe();
         }
       }]);
 
@@ -5601,7 +5601,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProdutsService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('https://t-shop.adaptable.app/api/product').pipe();
+          return this.http.get('https://quickpic.adaptable.app/api/product').pipe();
         }
       }]);
 
@@ -5677,7 +5677,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProdutsColorService, [{
         key: "fetch",
         value: function fetch() {
-          return this.http.get('https://t-shop.cyclic.app/productcolor').pipe();
+          return this.http.get('https://quickpic.adaptable.app/productcolor').pipe();
         }
       }]);
 
@@ -5773,14 +5773,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "register",
         value: function register(user) {
-          return this.http.post('https://t-shop.adaptable.app/api/auth/register', user);
+          return this.http.post('https://quickpic.adaptable.app/api/auth/register', user);
         }
       }, {
         key: "login",
         value: function login(user) {
           var _this16 = this;
 
-          return this.http.post('https://t-shop.adaptable.app/api/auth/login', user).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(function (_ref) {
+          return this.http.post('https://quickpic.adaptable.app/api/auth/login', user).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(function (_ref) {
             var token = _ref.token;
             localStorage.setItem('auth-token', token);
 
@@ -7509,7 +7509,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               image: this.canvas.reqImage,
               image1: this.canvas.reqImage1
             }; 
-            this.httpService.sendEmail("https://t-shop.adaptable.app/sendmail", image)
+            this.httpService.sendEmail("https://quickpic.adaptable.app/sendmail", image)
             data => {
               let res = data;
               console.log('all is ok');
